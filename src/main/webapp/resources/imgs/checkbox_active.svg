@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,3.49667737 C0,1.56551578 1.56522657,0 3.49667737,0 L10.5033226,0 C12.4344842,0 14,1.56522657 14,3.49667737 L14,10.5033226 C14,12.4344842 12.4347734,14 10.5033226,14 L3.49667737,14 C1.56551578,14 0,12.4347734 0,10.5033226 L0,3.49667737 Z M5.4623106,8.91833964 L2.98743687,6.4434659 L1.75,7.68090277 L5.4623106,11.3932134 L12.2682134,4.5873106 L11.0307765,3.34987373 L5.4623106,8.91833964 Z" id="checkbox-copy" fill="#20A0FF"></path>
+    </g>
+</svg>

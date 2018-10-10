@@ -1,0 +1,257 @@
+#menu {
+  overflow: hidden;
+  /* height: 100vh; */
+  height: 100%;
+  float: left;
+  user-select: none;
+  background-color: rgb(53,63,83);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  /* width: 260px; */
+}
+#menu #ensconce { /*隐藏菜单样式*/
+  /* width: 0.35rem; */
+  width: 50px;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  display: none;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+#menu #ensconce h2 {
+  cursor: pointer;
+  color: rgb(138,145,164);
+  /* font-size: 0.2rem;
+  line-height: 0.5rem; */
+  font-size: 20px;
+  line-height: 50px;
+  width: 100%;
+  position: absolute;
+  /* top: 35%; */
+  top:0;
+  /* -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(0%, -50%); */
+}
+#menu #ensconce h2 .menu-tab{
+  display: block;
+  margin-bottom: 110px;
+  background: #fff;
+  border-right: #ECF1F8;
+}
+#menu #ensconce h2 img {
+  width: 52%;
+}
+#menu #ensconce h2 .fa{
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 0;
+}
+#menu #open {/*显示菜单样式*/
+  width: 260px;
+  /* width: 2.6rem; */
+  height: 100%;
+  padding-bottom: 10px;
+  /* padding-bottom: 0.1rem; */
+  box-sizing: border-box;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+#menu #open .navH {
+  /* height: 0.6rem;
+  line-height: 0.6rem; */
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  /* padding-left:40px; */
+  /* padding-left:0.4rem; */
+  font-size: 20px;
+  /* font-size: 0.2rem; */
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  /* border-bottom: 1px solid rgb(91,178,245); */
+}
+#menu #open .navH span {
+  position: absolute;
+  right: 0;
+  /* padding: 0 0.15rem; */
+  padding: 0 15px;
+  cursor: pointer;
+}
+#menu #open .navH span .obscure {
+  width: 24px;
+  /* width: 0.24rem; */
+}
+#menu #open .navBox {
+  height: 100%;
+  overflow-y: auto;
+  margin-top: 10px;
+  /* margin-top: 0.1rem; */
+  color: rgb(138,145,164);
+}
+#menu #open .navBox ul li {
+  cursor: pointer;
+  position: relative;
+}
+#menu #open .navBox ul li:before{
+  content: '';
+	width:4px;
+  height:49px;
+  /* width:0.04rem;
+	height:0.49rem; */
+  /* background: rgb(91,178,245); */
+  background-image: linear-gradient(0deg, #559DFD 16%, #5BB6F3 86%);
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:999;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+#menu #open .navBox ul li .obtain:hover {
+	background-color: rgb(38,44,59); 
+}
+#menu #open .navBox ul li.activedark{
+	background-color: rgb(38,44,59); 
+}
+#menu #open .navBox ul li.activedark:before{
+  opacity: 1;
+}
+#menu #open .navBox ul li .item {
+  display:block;	
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  /* font-size: 0.15rem;
+  padding: 0.15rem 0; */
+  font-size: 15px;
+  padding: 15px 0;
+  transition: all 0.6s ease;
+  padding-left:23px;
+  /* padding-left:0.23rem; */
+    box-sizing: border-box;
+}
+#menu #open .navBox ul li .item b{
+	padding-right:8px;
+	/* padding-right:0.08rem; */
+}	
+#menu #open .navBox ul li .item i {
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  /* right: 0.35rem; */
+  -webkit-transition: -webkit-transform 0.6s ease;
+  -moz-transition: -moz-transform 0.6s ease;
+  -o-transition: -o-transform 0.6s ease;
+  -ms-transition: -ms-transform 0.6s ease;
+  transform-origin: 4px 3px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+#menu #open .navBox ul li .item .arrowRot {
+  transform: rotate(90deg);
+}
+#menu #open .navBox ul li .secondary {
+	background-color: rgb(53,63,83);
+  overflow: hidden;
+  /* height: 0; */
+  display: none;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+}
+/* #menu #open .navBox ul li .secondary .subitem {
+  display:block;	
+  padding: 0.1rem 0;
+  padding-left:0.55rem;
+  text-align: left;
+  font-size: 0.13rem;
+  border-top: 1px solid #42495d;
+  transition: all 0.4s ease;
+}
+#menu #open .navBox ul li .secondary .subitem:hover {
+  background-color: #1acbfc;
+}
+#menu #open .navBox ul li .secondary .seconFocus {
+  background-color: #1acbfc;
+  -webkit-box-shadow: 3px 3px 3px #aa8c51;
+  -moz-box-shadow: 3px 3px 3px #aa8c51;
+  box-shadow: 3px 3px 3px #aa8c51;
+} */
+#menu #open .navBox ul li .secondary a{
+  display: block;
+}
+#menu #open .navBox ul li .secondary .subitem {
+  position: relative;
+  display:block;	
+  padding: 15px 0;
+  padding-left:55px;
+  /* padding: 0.15rem 0;
+  padding-left:0.55rem; */
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+#menu #open .navBox ul li .secondary .subitem:before{
+  display: inline-block;
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  background: #fff;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#menu #open .navBox ul li .secondary .subitem:after{
+  display: inline-block;
+  content: '';
+	width:4px;
+	height:49px;
+	/* width:0.04rem;
+	height:0.49rem; */
+	background-image: linear-gradient(0deg, #559DFD 16%, #5BB6F3 86%);
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:999;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+#menu #open .navBox ul li .secondary .subitem:hover,
+#menu #open .navBox ul li .secondary .subitem.active {
+  background-color: rgba(0,0,0,.25);
+  color: #5BB6F3;
+}
+#menu #open .navBox ul li .secondary .subitem:hover:before,
+#menu #open .navBox ul li .secondary .subitem.active:before {
+  background: #5BB6F3;
+}
+#menu #open .navBox ul li .secondary .subitem:hover:after,
+#menu #open .navBox ul li .secondary .subitem.active:after {
+  opacity: 1;
+}
+#menu #open .navBox ul li .secondary .seconFocus {
+  background-color: #5BB6F3;
+  -webkit-box-shadow: 3px 3px 3px #aa8c51;
+  -moz-box-shadow: 3px 3px 3px #aa8c51;
+  box-shadow: 3px 3px 3px #aa8c51;
+}

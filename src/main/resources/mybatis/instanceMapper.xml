@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.roadjava.schedule.dao.InstanceDao">
+   <insert id="batchAdd" parameterType="java.util.List" > 
+        insert into instance(task_id,biz_date,create_time,modify_time) 
+         values
+         <foreach collection="list" item="oneitem" separator=",">  
+            (#{oneitem.taskId},#{oneitem.bizDate},#{oneitem.createTime},#{oneitem.modifyTime}) 
+        </foreach> 
+    </insert>
+    <select id="selectInsJustAdd" parameterType="java.util.Map" resultType="java.util.Map"> 
+        select i.id,i.task_id,i.status,t.cron from (
+        	select i.id,i.task_id,i.status from instance i 
+        	<where>  
+		        <if test="biz_date!=null and biz_date!='' ">  
+		            and biz_date=#{biz_date}
+		        </if>  
+		        <if test="status!=null  and status!='' ">  
+		            and status=#{status}  
+		        </if>  
+		    </where>   
+        ) i left join task_info t on i.task_id =t.id
+    </select>
+    <select id="getInstances" parameterType="java.util.Map" resultType="java.util.Map"> 
+        select i.id,i.task_id,i.status,t.cron from (
+        	select i.id,i.task_id,i.status from instance i 
+        	<where>  
+		        <if test="biz_date!=null and biz_date!='' ">  
+		            and biz_date=#{biz_date}
+		        </if>  
+		        <if test="status!=null  and status!='' ">  
+		            and status=#{status}  
+		        </if>  
+		    </where>   
+        ) i left join task_info t on i.task_id =t.id
+    </select>
+</mapper>

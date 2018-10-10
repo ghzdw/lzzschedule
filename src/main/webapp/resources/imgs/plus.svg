@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>el-icon-plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2审核分析页-弹框" transform="translate(-607.000000, -727.000000)" fill="#D3DCE6">
+            <g id="Group-12-Copy" transform="translate(210.000000, 480.000000)">
+                <g id="Group-26-Copy-7" transform="translate(359.000000, 238.000000)">
+                    <path d="M44,15 L44,10.0068455 C44,9.45078007 44.4438648,9 45,9 C45.5522847,9 46,9.44994876 46,10.0068455 L46,15 L50.9931545,15 C51.5492199,15 52,15.4438648 52,16 C52,16.5522847 51.5500512,17 50.9931545,17 L46,17 L46,21.9931545 C46,22.5492199 45.5561352,23 45,23 C44.4477153,23 44,22.5500512 44,21.9931545 L44,17 L39.0068455,17 C38.4507801,17 38,16.5561352 38,16 C38,15.4477153 38.4499488,15 39.0068455,15 L44,15 Z" id="el-icon-plus"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

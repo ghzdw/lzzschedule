@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>收缩 展开</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="收缩-展开" transform="translate(8.000000, 6.500000) scale(-1, 1) translate(-8.000000, -6.500000) ">
+            <rect id="Rectangle-4" fill="#6F7D95" x="0" y="0" width="16" height="1.45142855"></rect>
+            <rect id="Rectangle-4-Copy" fill="#6F7D95" x="5.71428571" y="5.71428571" width="10.2857143" height="1.45142855"></rect>
+            <rect id="Rectangle-4-Copy-2" fill="#6F7D95" x="0" y="11.4285714" width="16" height="1.45142855"></rect>
+            <polygon id="Path" fill="#5BB6F3" transform="translate(1.815258, 7.061543) scale(-1, 1) translate(-1.815258, -7.061543) " points="0 10.6945144 3.63051562 7.06154294 0 3.42857143"></polygon>
+        </g>
+    </g>
+</svg>
